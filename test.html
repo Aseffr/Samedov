@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по эволюции человека</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Тест по эволюции человека</h1>
+    </header>
+
+    <main class="container">
+        <form id="evolution-test">
+            <div class="question">
+                <h3>1. Какой вид человека первым начал изготавливать орудия труда?</h3>
+                <label><input type="radio" name="q1" value="a"> Австралопитек</label>
+                <label><input type="radio" name="q1" value="b"> Человек умелый</label>
+                <label><input type="radio" name="q1" value="c"> Человек прямоходящий</label>
+            </div>
+
+            <div class="question">
+                <h3>2. Когда появился Homo sapiens?</h3>
+                <label><input type="radio" name="q2" value="a"> 1 млн лет назад</label>
+                <label><input type="radio" name="q2" value="b"> 300 тыс. лет назад</label>
+                <label><input type="radio" name="q2" value="c"> 50 тыс. лет назад</label>
+            </div>
+
+            <div class="question">
+                <h3>3. Какой вид человека первым освоил огонь?</h3>
+                <label><input type="radio" name="q3" value="a"> Человек умелый</label>
+                <label><input type="radio" name="q3" value="b"> Человек прямоходящий</label>
+                <label><input type="radio" name="q3" value="c"> Неандерталец</label>
+            </div>
+
+            <div class="question">
+                <h3>4. Где впервые появился Homo sapiens?</h3>
+                <label><input type="radio" name="q4" value="a"> Европа</label>
+                <label><input type="radio" name="q4" value="b"> Азия</label>
+                <label><input type="radio" name="q4" value="c"> Африка</label>
+            </div>
+
+            <div class="question">
+                <h3>5. Какой период соответствует Австралопитеку?</h3>
+                <label><input type="radio" name="q5" value="a"> 10-8 млн лет назад</label>
+                <label><input type="radio" name="q5" value="b"> 4-2 млн лет назад</label>
+                <label><input type="radio" name="q5" value="c"> 1 млн - 500 тыс. лет назад</label>
+            </div>
+
+            <button type="button" id="submit-test">Проверить ответы</button>
+        </form>
+
+        <div id="results" style="display: none;">
+            <h2>Результаты теста</h2>
+            <p>Ваш результат: <span id="score">0</span> из 5</p>
+            <p id="result-message"></p>
+            <a href="index.html" class="return-button">Вернуться на главную</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Тест по эволюции человека</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

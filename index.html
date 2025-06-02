@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эволюция человека</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Эволюция человека</h1>
+    </header>
+
+    <!-- Липкая реклама казино -->
+    <div class="sticky-ad">
+        <span class="fake-close">✕</span>
+        <h3>Играйте в нашем казино!</h3>
+        <p>Выиграйте до 1 000 000 рублей! Только сегодня!</p>
+        <a href="https://betboompass.com/tasks" target="_blank">Начать игру</a>
+    </div>
+
+    <main class="container">
+        <section>
+            <h2>Основные этапы эволюции</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="images/australopithecus.gif" alt="Австралопитек">
+                    <h3>Австралопитек</h3>
+                    <p>Жил около 4-2 млн лет назад. Первый представитель рода Homo.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/homo-habilis.jpg" alt="Человек умелый">
+                    <h3>Человек умелый</h3>
+                    <p>2.5-1.5 млн лет назад. Первый, кто начал изготавливать орудия труда.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/homo-erectus.jpg" alt="Человек прямоходящий">
+                    <h3>Человек прямоходящий</h3>
+                    <p>1.8 млн - 300 тыс. лет назад. Освоил огонь и мигрировал из Африки.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Видео -->
+        <section>
+            <h2>Видео об эволюции человека</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="video/1.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Еще одна реклама с фейковым крестиком -->
+        <div class="ad">
+            <span class="fake-close">✕</span>
+            <h3>Уникальное предложение!</h3>
+            <p>Зарабатывайте 100 000 рублей в день без усилий!</p>
+            <a href="https://betboompass.com/tasks" target="_blank">Узнать подробности</a>
+        </div>
+
+        <section>
+            <h2>Современный человек</h2>
+            <p>Homo sapiens появился около 300 тыс. лет назад в Африке. Отличается развитым мозгом, речью и сложной социальной структурой.</p>
+            <img src="images/homo-sapiens.jpg" alt="Homo sapiens" class="content-image">
+        </section>
+
+        <!-- Кнопка перехода на тест -->
+        <div class="test-button-container">
+            <a href="test.html" class="test-button">Пройти тест</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Сайт об эволюции человека</p>
+    </footer>
+
+    <script>
+        // Обработка фейковых крестиков
+        document.querySelectorAll('.fake-close').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Вместо закрытия - переход на рекламный сайт
+                window.location.href = "https://betboompass.com/tasks";
+            });
+        });
+    </script>
+</body>
+</html>
